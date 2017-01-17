@@ -1,0 +1,58 @@
+input[type="text"],
+input[type="password"] {
+	background-color: pink;
+	border: 1px solid blue;
+	font-size: 14px;
+	padding: 0.5em;
+}
+
+input[type="text"].error {
+	background-color: yellow;
+	color: red;
+	border-color: red;
+}
+
+fieldset {
+	padding-left: 20px;
+}
+
+fieldset.before {
+	padding-left: 0;
+}
+
+fieldset.required:before {
+	width: 20px;
+	text-align: center;
+	content: "*";
+	color: red;
+}
+
+fieldset {
+	border: 0;
+	border-bottom: 1px solid #bbbbbb;
+	padding: 20px 10px;
+}
+
+.selectLabel {
+	position: relative;
+}
+
+.selectLabel select {
+	min-width: 100px;
+	-webkit-appearance: none;
+	background: transparent;
+	border: 0;
+	padding: 0.5em;
+}
+
+.selectLabel:after {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	content:"\F107";
+	font-family: "FontAwesome";
+	background-color: cyan;
+	font-size: 12px;
+	padding: 0.5em;
+	z-index: -1;
+}

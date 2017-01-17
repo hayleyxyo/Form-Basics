@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form styling</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/formstyle.css" />
+		<script src="https://use.fontawesome.com/b168e74bb7.js"></script>
+	</head>
+	<body>
+		<h1>Yo This is the Form</h1>
+
+		<form action="http://tramsformer.com.au/ga/fewd/api.php" method="post" enctype="multipart/form-data">
+
+
+			<fieldset class="required">
+			<input type="text" name="name" placeholder="Type in your name" required>
+			</fieldset>
+
+			<fieldset class="required">
+			<input type="text" name="email" placeholder="Type in your email" required>
+			</fieldset>
+
+			<fieldset class="required">
+			<input type="date" name="date" required>
+			</fieldset>
+
+			<fieldset class="required">
+			<input type="password" name="password" placeholder="Type in your password" required>
+			</fieldset>
+
+			<label for="animalSelect" class="selectLabel">
+				<select name="animals">
+					<option value="dog">Dag</option>
+					<option value="cat">Cat</option>
+					<option value="monkey">Monkey</option>
+					<option value="rabbit">Rabbit</option>
+					<option value="chicken">Chicken</option>
+					<option value="horse">Horse</option>
+				</select>
+			</label>
+
+			<fieldset>
+				<label for="checkboxBurger">Burger
+				<input id="checkboxBurger"type="radio" name="lunch" value="burger">
+				</label>
+
+				<label for="checkboxCake">Cake
+				<input id="checkboxCake"type="radio" name="lunch" value="cake">
+				</label>
+
+				<label for="checkboxBeer">Beer
+				<input id="checkboxBeer"type="radio" name="lunch" value="beer">
+				</label>
+
+				<label for="checkboxSalad">Salad
+				<input id="checkboxSalad"type="radio" name="lunch" value="salad">
+				</label>
+			</fieldset>
+<!-- radio can only tick one, checkbox can tick more than one. -->
+			<fieldset>
+			<textarea maxlength="140" name="content" placeholder="Tell me about your day..." ></textarea>
+			</fieldset>
+
+			<fieldset>
+			<input id="fileUpload" type="file" name="" value="Profile Pic">
+			</fieldset>
+
+			<fieldset>
+			<input type="submit" name="" value="Fire away!">
+			</fieldset>
+
+		</form>
+	</body>
+</html>
